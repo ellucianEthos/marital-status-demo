@@ -1,0 +1,14 @@
+{
+  "name": "elive-2019-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": " concurrently --kill-others-on-fail \"npm run start:client\" \"npm run start:server\"",
+    "start:client": "cd client; npm start",
+    "start:server": "cd server; npm start",
+    "postinstall": "(cd ./client && npm install) && (cd ./server && npm install)"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
