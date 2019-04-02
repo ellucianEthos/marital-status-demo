@@ -1,8 +1,10 @@
-# elive-2019-demo
+# Marital Status Demo
 
-## About the Project
+This is a demo application that allows a user to update a person's marital status. The application is written in React and Node.js, and connects to Ethos Integration to read and update data.
 
-TBD
+## Description
+
+This project demonstrates how a user-facing UI application can be built to utilize the synchronous and asynchronous messaging patterns available in Ethos Integration.
 
 ---
 
@@ -15,7 +17,7 @@ TBD
 
 To run the project:
 
-	git clone [public github link](https://www.youtube.com/watch?v=oHg5SJYRHA0)
+	git clone [public github link]
 
 	cd elive-2019-demo
 
