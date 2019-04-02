@@ -21,7 +21,7 @@ The server will use the API key to call the /auth endpoint to obtain a JSON Web 
 
 To run the project:
 
-	git clone <github link>
+	git clone https://github.com/ellucianEthos/marital-status-demo.git
 
 	cd marital-status-demo
 

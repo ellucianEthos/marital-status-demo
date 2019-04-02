@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "6f48f1e3-7bc0-4d6c-a2d4-5053e7a000b0",
+		"name": "Marital Status Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/auth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b70149b6-5056-4af5-b808-672a7f145b52",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <api key here>"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://integrate.elluciancloud.com/auth",
+					"protocol": "https",
+					"host": [
+						"integrate",
+						"elluciancloud",
+						"com"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/persons",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b70149b6-5056-4af5-b808-672a7f145b52",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <jwt here>"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://integrate.elluciancloud.com/api/persons?limit=100",
+					"protocol": "https",
+					"host": [
+						"integrate",
+						"elluciancloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"persons"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/marital-statuses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b70149b6-5056-4af5-b808-672a7f145b52",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <jwt here>"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://integrate.elluciancloud.com/api/marital-statuses",
+					"protocol": "https",
+					"host": [
+						"integrate",
+						"elluciancloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"marital-statuses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/consume",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b70149b6-5056-4af5-b808-672a7f145b52",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <jwt here>"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://integrate.elluciancloud.com/consume",
+					"protocol": "https",
+					"host": [
+						"integrate",
+						"elluciancloud",
+						"com"
+					],
+					"path": [
+						"consume"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
