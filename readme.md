@@ -2,9 +2,7 @@
 
 ## About the Project
 
-Jeff to fill in content here
-
-Pretend there's lots of content here - Jeff will fill in some of the data here about the concept / purpose of the project. I can discuss what tools it uses here too, if we so decide to go that route.
+TBD
 
 ---
 
