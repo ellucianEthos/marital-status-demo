@@ -1,6 +1,6 @@
 # Marital Status Demo
 
-This is a demo application that allows a user to update a person's marital status. The application is written in React and Node.js, and connects to Ethos Integration to read and update data.
+This is a demo application that allows a user to update a person's marital status. The application is written in [React](https://reactjs.org/) and [Node.js](https://nodejs.org), and connects to Ethos Integration to read and update data.
 
 ## Description
 
@@ -21,9 +21,9 @@ The server will use the API key to call the /auth endpoint to obtain a JSON Web 
 
 To run the project:
 
-	git clone [public github link]
+	git clone <github link>
 
-	cd elive-2019-demo
+	cd marital-status-demo
 
 	npm install
 
