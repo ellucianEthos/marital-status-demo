@@ -4,9 +4,13 @@ This is a demo application that allows a user to update a person's marital statu
 
 ## Description
 
-This project demonstrates how a user-facing UI application can be built to utilize the synchronous and asynchronous messaging patterns available in Ethos Integration.
+This project demonstrates how a user-facing UI application can be built to utilize the synchronous and asynchronous messaging patterns available in Ethos Integration. The application consists of a client (React) and a server (Node.js). All the Ethos Integration specific communication happens between the server and Ethos Integration.
 
----
+![](/screenshots/diagram.png)
+
+The server component of this demo needs an API Key to communicate with Ethos Integration. Configuring Ethos Integration and access to the authoritative system is outside the scope of this document. Contact your system admin to obtain an API key.
+
+The server will use the API key to call the /auth endpoint to obtain a JSON Web Token (JWT). The JWT is then used in subsequent calls to /api and /comsume to authenticate access. The server will call the proxy /api to read and update data in the authoritative system - this is the synchronous messaging pattern. When data is updated in the authoritative system, the server will receive a change notification for that data by calling the /consume endpoint - this is the asynchronous messaging pattern.
 
 ## Prerequisites
 
